@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react'
+import Link from 'next/link'
 
 const CounterPage = () => {
   const { count, increment } = useCounter()
@@ -7,6 +8,9 @@ const CounterPage = () => {
     <div>
       <div>{count}</div>
       <button onClick={increment}>Increment</button>
+      <div>
+        <Link href="/">Home</Link>
+      </div>
     </div>
   )
 }
