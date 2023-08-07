@@ -1,7 +1,9 @@
-import styles from '../styles/home.module.css'
+import Link from 'next/link'
 
-const HomePage = () => {
-  return <div className={styles.text}>Hello World!</div>
-}
+const HomePage = () => (
+  <div>
+    <Link href="/counter">Counter</Link>
+  </div>
+)
 
 export default HomePage
