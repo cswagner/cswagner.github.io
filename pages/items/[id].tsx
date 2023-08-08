@@ -1,8 +1,9 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
+import { items } from '../../lib/items'
 import styles from '../../styles/item.module.css'
 
 export const getStaticPaths: GetStaticPaths = () => ({
-  paths: [1, 2, 3].map((id) => ({ params: { id: `${id}` } })),
+  paths: items.map((id) => ({ params: { id: `${id}` } })),
   fallback: false,
 })
 
