@@ -2,7 +2,7 @@ import {
   FontAwesomeIcon,
   FontAwesomeIconProps,
 } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 const HomePage = () => (
   <div className="flex h-screen flex-col items-center justify-center max-sm:space-y-4 sm:flex-row sm:space-x-4">
@@ -17,6 +17,11 @@ const HomePage = () => (
         icon={faGithub}
         className="hover:text-rose-500 active:text-rose-500"
         url="https://www.github.com/cswagner"
+      />
+      <IconLink
+        icon={faLinkedinIn}
+        className="hover:text-blue-500 active:text-blue-500"
+        url="https://www.linkedin.com/in/cswagner"
       />
     </div>
   </div>
