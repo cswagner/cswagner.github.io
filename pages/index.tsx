@@ -10,6 +10,10 @@ const HomePage = () => (
   <div>
     <Head>
       <title>Chris Wagner</title>
+      <meta
+        name="description"
+        content="Profile for Chris Wagner, full-stack software engineer"
+      />
     </Head>
     <div className="flex h-screen flex-col items-center justify-center max-sm:space-y-4 sm:flex-row sm:space-x-4">
       <div className="flex flex-col items-center sm:items-end">
