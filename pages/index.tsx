@@ -20,7 +20,7 @@ const HomePage = () => (
         <div className="text-center text-4xl text-neutral-100">
           Chris Wagner
         </div>
-        <div className="text-center font-thin text-neutral-500">
+        <div className="text-center font-thin text-neutral-400">
           Full-Stack Software Engineer
         </div>
       </div>
