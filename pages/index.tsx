@@ -29,16 +29,19 @@ const HomePage = () => (
           icon={faGithub}
           className="hover:text-rose-500 active:text-rose-500"
           url="https://www.github.com/cswagner"
+          ariaLabel="GitHub"
         />
         <IconLink
           icon={faLinkedinIn}
           className="hover:text-blue-500 active:text-blue-500"
           url="https://www.linkedin.com/in/cswagner"
+          ariaLabel="LinkedIn"
         />
         <IconLink
           icon={faEnvelope}
           className="hover:text-emerald-500 active:text-emerald-500"
           url="mailto:contact@cswagner.io"
+          ariaLabel="Email"
         />
       </div>
     </div>
@@ -49,12 +52,19 @@ const IconLink = ({
   icon,
   className,
   url,
+  ariaLabel,
 }: {
   icon: FontAwesomeIconProps['icon']
   className: string
   url: string
+  ariaLabel: string
 }) => (
-  <a href={url} target="_blank" rel="noopener noreferrer">
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={ariaLabel}
+  >
     <FontAwesomeIcon
       className={`${className} duration-250 h-8 w-8 text-neutral-100 transition ease-in-out hover:scale-125 active:scale-125`}
       icon={icon}
