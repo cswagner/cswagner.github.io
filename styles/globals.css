@@ -4,4 +4,7 @@
 
 body {
   @apply bg-neutral-900;
+  @apply prose;
+  @apply prose-neutral;
+  @apply prose-invert;
 }
