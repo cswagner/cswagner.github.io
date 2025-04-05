@@ -5,6 +5,7 @@ import {
 } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import Post from '../posts/post.mdx'
 
 const HomePage = () => (
   <div>
@@ -15,16 +16,12 @@ const HomePage = () => (
         content="Profile for Chris Wagner, full-stack software engineer"
       />
     </Head>
-    <div className="flex h-screen flex-col lg:flex-row">
+    <div className="flex h-screen w-screen flex-col lg:flex-row">
       <div className="flex justify-center p-8 lg:items-center">
         <div className="flex flex-col items-center space-y-4">
           <div className="flex flex-col">
-            <div className="text-center text-4xl text-neutral-100">
-              Chris Wagner
-            </div>
-            <div className="text-center font-thin text-neutral-400">
-              Full-Stack Software Engineer
-            </div>
+            <h1 className="m-0 text-center">Chris Wagner</h1>
+            <p className="m-0 text-center">Full-Stack Software Engineer</p>
           </div>
           <div className="flex flex-row items-center space-x-4">
             <IconLink
@@ -50,7 +47,7 @@ const HomePage = () => (
       </div>
       <div className="lg:px0 flex flex-1 flex-col gap-4 overflow-y-scroll px-8 lg:px-0 lg:pe-8">
         <div className="hidden min-h-4 flex-1 lg:flex" />
-        {/* TODO: Add blog post here */}
+        <Post />
         <div className="flex min-h-4 flex-1" />
       </div>
     </div>
